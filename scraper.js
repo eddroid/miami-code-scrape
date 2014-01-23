@@ -11,6 +11,7 @@ var utils = require('utils'),
     }),
     table = [];
 
+// log console.log messages to stdout
 casper.on("remote.message", function(message) {
   this.echo("[console.log] " + message);
 });

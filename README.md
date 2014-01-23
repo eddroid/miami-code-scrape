@@ -1,4 +1,4 @@
-Install phantomjs on Mac with HomeBrew
+Install casperjs on Mac with HomeBrew
 ----
 
 1. ```update brew```
@@ -9,7 +9,29 @@ Run scraper to generate scrape.json
 
 ```casperjs scraper.js --verbose```
 
-Figure out the hierarchy structure of the pages based on the (poorly formatted) Table of Contents
+scrape.json format
+---
+```
+{
+  url: "The page URL",
+  title: "The page title",
+  html: "The page HTML code",
+}
+```
+
+Figure out the hierarchy structure based on the (poorly formatted) "Table of Contents" page and dump it to structure.json
 ----
 
-```node structure.js```
+```phantomjs structure.js```
+
+structure.json format
+---
+
+```
+{
+  url: "The link URL",
+  label: "The link text",
+  parentUrl: "The parent link URL",
+  parentLabel: "The parent link text"
+}
+```
