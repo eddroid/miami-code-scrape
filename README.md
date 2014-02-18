@@ -1,7 +1,7 @@
 Install casperjs on Mac with HomeBrew
 ----
 
-1. ```update brew```
+1. ```brew update```
 1. ```brew install casperjs --devel```
 
 Run scraper to generate scrape.json
